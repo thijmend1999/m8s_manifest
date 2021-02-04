@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <remote name="vendor"
+            fetch="https://github.com"
+            revision="master" />
+	
+    <remote name="device"
+            fetch="https://github.com"
+            revision="lineage-17.1"/>
+
+    <remote name="kernel"
+            fetch="https://github.com"
+            revision="android_kernel_htc_msm8939"/>
+
+    <!--Device Trees-->
+    <project path="device/htc/m8s" name="M8s-dev/android_device_htc_m8qlul" remote="device" />
+
+
+    <!--Kernel-->
+    <project path="kernel/htc/m8s" name="M8s-dev/android_kernel_htc_msm8939" remote="kernel" />
+
+
+
+    <!-- Vendor folders -->
+    <project path="vendor/htc/m8s" name="M8s-dev/proprietary_vendor_m8s" remote="vendor" />
+</manifest>
